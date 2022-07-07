@@ -1,10 +1,16 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../../styles/Home.module.css";
+import { Meta } from "../components/Meta";
+import HomeHero from "../features/home/components/HomeHero/HomeHero";
+import Showcase from "../features/home/components/ShowcaseCarousel/ShowcaseCarousel";
 
 const Home: NextPage = () => {
-  return <div>Test Next app</div>;
+  return (
+    <>
+      <Meta page={"home"} />
+      <HomeHero />
+      <Showcase />
+    </>
+  );
 };
 
 export default Home;

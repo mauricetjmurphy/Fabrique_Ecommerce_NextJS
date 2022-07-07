@@ -4,7 +4,7 @@ type MetaProps = {
   page: string;
 };
 
-const Meta = ({ page }: MetaProps) => {
+export const Meta = ({ page }: MetaProps) => {
   return (
     <Head>
       <title>{`Fabrique ECommerce - ${page}`}</title>
@@ -17,5 +17,3 @@ const Meta = ({ page }: MetaProps) => {
     </Head>
   );
 };
-
-export default Meta;
